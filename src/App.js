@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import HelloWorld from './components/HelloComponent'
 import Counter from './components/CounterComponent'
 
+import './estilos.css'
+
 class App extends Component {
 
   state = {

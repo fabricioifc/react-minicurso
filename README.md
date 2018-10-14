@@ -15,3 +15,5 @@
  - Adicionar um input para o valor de decremento ser dinâmico
 8. Adicionando Estilos
  - Adicionar algumas cores no componente HelloWorld
+9. Adicionando Estilos
+ - Criar um arquivo de estilos.css para adicionar estilos em App.js
