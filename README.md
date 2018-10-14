@@ -20,3 +20,5 @@
 10. Adicionar a biblioteca axios, para chamadas HTTP
  - npm install axios
  - Criar o componente Posts
+11. Listar os posts
+ - Criar um componente para listar cada um dos posts
