@@ -5,3 +5,5 @@
  - Criar um componente HelloWorld e importar na tela inicial (App.js)
 3. Props
  - Adicionando props no componente
+4. State
+ - Adicionando um novo componente para incrementar/decrementar um valor
