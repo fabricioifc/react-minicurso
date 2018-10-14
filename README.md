@@ -13,3 +13,5 @@
 7. Adicionando Inputs e onChange
  - Adicionar um input para o valor de incremento ser dinâmico
  - Adicionar um input para o valor de decremento ser dinâmico
+8. Adicionando Estilos
+ - Adicionar algumas cores no componente HelloWorld
