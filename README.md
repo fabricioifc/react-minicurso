@@ -10,3 +10,6 @@
 5. Increment/Decrement
  - Adicionado dois botões com onClick
  - Adicionado as funções para incrementar/decrementar o valor do contador
+6. Adicionando Inputs e onChange
+ - Adicionar um input para o valor de incremento ser dinâmico
+ - Adicionar um input para o valor de decremento ser dinâmico
