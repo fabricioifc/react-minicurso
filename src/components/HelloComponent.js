@@ -1,9 +1,17 @@
 import React, {  } from "react";
-import ReactDOM from "react-dom";
 
 class HelloWorld extends React.Component {
+
   render() {
-    return <h1>Hello World!</h1>
+
+    const {name, texto} = this.props;
+
+    return (
+      <div>
+        <h1>Hello {name}!</h1>
+        <p>{texto}</p>
+      </div>
+    )
   }
 }
 
