@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <HelloWorld name="World" texto="Meu primeiro exemplo com props." />
-        <Counter />
+        <Counter incrementarPor={2} decrementarPor={1} />
       </div>
     );
   }
