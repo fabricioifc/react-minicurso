@@ -7,3 +7,6 @@
  - Adicionando props no componente
 4. State
  - Adicionando um novo componente para incrementar/decrementar um valor
+5. Increment/Decrement
+ - Adicionado dois botões com onClick
+ - Adicionado as funções para incrementar/decrementar o valor do contador

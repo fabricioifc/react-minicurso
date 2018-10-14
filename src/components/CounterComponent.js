@@ -7,7 +7,28 @@ export default class Counter extends React.Component {
     contador: 0
   }
 
+  incrementar = () => {
+    this.setState({
+      contador: this.state.contador + 1
+    })
+  }
+
+  decrementar = () => {
+    this.setState({
+      contador: this.state.contador - 1
+    })
+  }
+
   render() {
-    return <h2>{this.state.contador}</h2>
+    return (
+      <div>
+        <h2>{this.state.contador}</h2>
+        <div>
+          <button onClick={this.incrementar}>Incrementar</button>
+          <button onClick={this.decrementar}>Decrementar</button>
+        </div>
+      </div>
+
+    )
   }
 }
