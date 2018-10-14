@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import HelloWorld from './components/HelloComponent'
 import Counter from './components/CounterComponent'
+import Posts from "./components/Posts";
 
 import './estilos.css'
 
@@ -40,6 +41,9 @@ class App extends Component {
           onChange={this._handleChangeDecrementarPor} />
 
         <Counter incrementarPor={this.state.incrementarPor} decrementarPor={this.state.decrementarPor} />
+
+        <hr />
+        <Posts />
       </div>
     );
   }

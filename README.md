@@ -17,3 +17,5 @@
  - Adicionar algumas cores no componente HelloWorld
 9. Adicionando Estilos
  - Criar um arquivo de estilos.css para adicionar estilos em App.js
+10. Adicionar a biblioteca axios, para chamadas HTTP
+ - npm install axios
