@@ -41,7 +41,7 @@ class App extends Component {
           onChange={this._handleChangeDecrementarPor} />
 
         <Counter incrementarPor={this.state.incrementarPor} decrementarPor={this.state.decrementarPor} />
-
+        
         <Posts />
       </div>
     );

@@ -3,6 +3,7 @@ import axios from "axios";
 
 //Componentes
 import Post from "./Post";
+import PostForm from "./PostForm";
 
 class Posts extends React.Component {
 
@@ -37,6 +38,7 @@ class Posts extends React.Component {
     return (
       <div>
         <h1>Lista de Posts</h1>
+        <PostForm />
         { this.state.posts.map(post => (
           <Post key={post.id} post={post} onRemovePost={this.removePost.bind(this)} />
         ))}
