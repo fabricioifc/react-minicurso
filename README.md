@@ -22,3 +22,5 @@
  - Criar o componente Posts
 11. Listar os posts
  - Criar um componente para listar cada um dos posts
+12. Estilizando a lista de posts
+ - alterações no arquivo estilos.css e App.js

@@ -28,22 +28,25 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HelloWorld name="World" texto="Meu primeiro exemplo com props." />
-        
-        <input type="text" 
-          name="incrementarPor" 
-          value={this.state.incrementarPor} 
-          onChange={this._handleChangeIncrementarPor} />
+        <div className="left">
+          <HelloWorld name="World" texto="Meu primeiro exemplo com props." />
           
-        <input type="text" 
-          name="decrementarPor" 
-          value={this.state.decrementarPor} 
-          onChange={this._handleChangeDecrementarPor} />
+          <input type="text" 
+            name="incrementarPor" 
+            value={this.state.incrementarPor} 
+            onChange={this._handleChangeIncrementarPor} />
+            
+          <input type="text" 
+            name="decrementarPor" 
+            value={this.state.decrementarPor} 
+            onChange={this._handleChangeDecrementarPor} />
 
-        <Counter incrementarPor={this.state.incrementarPor} decrementarPor={this.state.decrementarPor} />
+          <Counter incrementarPor={this.state.incrementarPor} decrementarPor={this.state.decrementarPor} />
+        </div>
 
-        <hr />
-        <Posts />
+        <div className="right">
+          <Posts />
+        </div>
       </div>
     );
   }
