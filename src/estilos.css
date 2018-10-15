@@ -5,17 +5,6 @@
   border: 1px solid #777;
 }
 
-.left {
-  width: 400px;
-  float: left;
-}
-
-.right {
-  margin-left: 440px;
-  background-color: #dedede;
-  padding: 15px;
-}
-
 .post:nth-of-type(odd) {
   background-color: #ccc;
   padding: 10px;

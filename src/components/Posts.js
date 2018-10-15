@@ -23,12 +23,22 @@ class Posts extends React.Component {
       .catch(error => alert(error))
   }
 
+  removePost = id => {
+    axios
+      .delete(`${this.state.base_url}/posts/${id}`)
+      .then(response => {
+        const posts = this.state.posts.filter(post => post.id !== id);
+        this.setState({posts: posts});
+      })
+      .catch(error => alert(error))
+  }
+
   render() {
     return (
       <div>
         <h1>Lista de Posts</h1>
         { this.state.posts.map(post => (
-          <Post key={post.id} post={post} />
+          <Post key={post.id} post={post} onRemovePost={this.removePost.bind(this)} />
         ))}
       </div>
     )

@@ -24,3 +24,5 @@
  - Criar um componente para listar cada um dos posts
 12. Estilizando a lista de posts
  - alterações no arquivo estilos.css e App.js
+13. Deletando o post
+  - Utilizando o método http 'delete' com axios
