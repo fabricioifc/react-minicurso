@@ -8,7 +8,10 @@ export default class PostForm extends React.Component {
     const messageValue = this.message.value;
 
     const post = {title: titleValue, message: messageValue}
-    this.props.salvar(post);
+    this.props.onSalvar(post);
+
+    this.title.value = '';
+    this.message.value = '';
   }
 
   render() {

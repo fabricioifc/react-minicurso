@@ -34,11 +34,25 @@ class Posts extends React.Component {
       .catch(error => alert(error))
   }
 
+  salvar = post => {
+    axios
+      .post(`${this.state.base_url}/posts`, {post: post})
+      .then(response => {
+        console.log(response.data);
+        
+        this.setState({
+          posts: [...this.state.posts, response.data]
+        })
+      })
+      .catch(error => alert(error))
+
+  }
+
   render() {
     return (
       <div>
         <h1>Lista de Posts</h1>
-        <PostForm />
+        <PostForm onSalvar={this.salvar.bind(this)} />
         { this.state.posts.map(post => (
           <Post key={post.id} post={post} onRemovePost={this.removePost.bind(this)} />
         ))}

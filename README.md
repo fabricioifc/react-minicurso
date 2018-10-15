@@ -29,3 +29,7 @@
 14. Cadastrando posts
  - Criar componente PostForm com um form
  - Importar no componentes Posts.js
+15. Cadastrando posts
+ - Componente criado
+16. Desafio
+ - Atualizar o post
