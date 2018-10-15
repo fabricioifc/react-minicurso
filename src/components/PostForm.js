@@ -2,16 +2,23 @@ import React from 'react';
 
 export default class PostForm extends React.Component {
 
+  componentDidUpdate() {
+    const { title, message } = this.props.post;
+
+    this.title.value = title ? title : "";
+    this.message.value = message ? message : "";
+  }
+
   handleSubmit = evento => {
     evento.preventDefault();
     const titleValue = this.title.value;
     const messageValue = this.message.value;
 
     const post = {title: titleValue, message: messageValue}
+    if (this.props.post) {
+      post.id = this.props.post.id;
+    }
     this.props.onSalvar(post);
-
-    this.title.value = '';
-    this.message.value = '';
   }
 
   render() {

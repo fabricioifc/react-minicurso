@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Post = ({post, onRemovePost}) => {
+const Post = ({post, onRemovePost, onEditPost}) => {
   
   return (
     <div className="post">
@@ -9,6 +9,9 @@ const Post = ({post, onRemovePost}) => {
       <br />
       <button onClick={() => window.confirm("Tem certeza?") ? onRemovePost(post.id) : null }>
         Excluir
+      </button>
+      <button onClick={() => onEditPost(post.id) }>
+        Editar
       </button>
     </div>
   )
